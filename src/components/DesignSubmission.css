@@ -1,0 +1,94 @@
+.design-submission-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animated-heading {
+    font-size: 2.5rem;
+    color: #f50057;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 0.5s ease-in-out;
+  }
+  
+  .animated-text {
+    font-size: 1.2rem;
+    color: #00848c;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animated-form .form-label {
+    color: #00848c;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animated-form .form-control {
+    background: #fff;
+    border: 2px solid #00848c;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .animated-form .form-control:focus {
+    border-color: #f50057;
+    box-shadow: 0px 0px 10px rgba(245, 0, 87, 0.3);
+  }
+  
+  .btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #00848c;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: bounceIn 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #005f5f;
+  }
+  
+  .btn-create-outfit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #f50057;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: bounceIn 0.5s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .btn-create-outfit:hover {
+    background-color: #c40046;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  
+  @keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
