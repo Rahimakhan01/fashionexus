@@ -34,19 +34,18 @@ const ContestDetails = () => {
   }
 
   return (
-    <div className="contest-details">
-      <div className="details-content">
-        <h1 className="animated-heading">{contest.name}</h1>
-        <p className="contest-description"><strong>Description:</strong> {contest.description}</p>
-        <p className="contest-deadline"><strong>Deadline:</strong> {contest.deadline}</p>
-        <p className="contest-prizes"><strong>Prizes:</strong> {contest.prizes}</p>
-        <p className="contest-rules"><strong>Rules:</strong></p>
-        <pre className="contest-rules-text">{contest.rules}</pre>
-        <p className="contest-judges"><strong>Judges:</strong> {contest.judges}</p>
+    <div className="contest-card">
+      <div className="card-border-top"></div>
+      <h1>{contest.name}</h1>
+      <p className="description"><strong>Description:</strong> {contest.description}</p>
+      <p className="deadline"><strong>Deadline:</strong> {contest.deadline}</p>
+      <p className="prizes"><strong>Prizes:</strong> {contest.prizes}</p>
+      <p className="rules"><strong>Rules:</strong></p>
+      <pre className="rules-text">{contest.rules}</pre>
 
-        {/* Register Button */}
-        <Link to="/designsubmission" className="btn-register animated-button">Register</Link>
-      </div>
+
+      {/* Register Button */}
+      <Link to="/designsubmission" className="btn-register animated-button">Register</Link>
     </div>
   );
 };

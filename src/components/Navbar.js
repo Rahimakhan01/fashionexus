@@ -23,12 +23,12 @@ const Navbar = () => {
               <Link className={`nav-link ${location.pathname === "/vote" ? "active" : ""}`} to="/vote" style={{ color: location.pathname === "/vote" ? 'orange' : '#fff', textDecoration: 'none', padding: '10px 15px', transition: 'all 0.3s ease' }}>DesignVoting</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${location.pathname === "/profile" ? "active" : ""}`} to="/profile" style={{ color: location.pathname === "/profile" ? 'orange' : '#fff', textDecoration: 'none', padding: '10px 15px', transition: 'all 0.3s ease' }}>UserProfile</Link>
+              <Link className={`nav-link ${location.pathname === "/profile" ? "active" : ""}`} to="/profile" style={{ color: location.pathname === "/profile" ? 'orange' : '#fff', textDecoration: 'none', padding: '10px 15px', transition: 'all 0.3s ease' }}>MyStylist</Link>
             </li>
           </ul>
           <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#fff', border: 'none', padding: '10px', transition: 'background-color 0.3s ease' }} />
-            <button className="btn btn-outline-success" type="submit" style={{ color: '#fff', borderColor: '#fff', marginLeft: '10px', transition: 'all 0.3s ease' }}>Search</button>
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffe7e5', border: 'none', padding: '10px', transition: 'background-color 0.3s ease' }} />
+            <button className="btn btn-outline-success" type="submit" style={{ color: '#ffe7e5', borderColor: '#fff', marginLeft: '10px', transition: 'all 0.3s ease' }}>Search</button>
           </form>
         </div>
       </div>

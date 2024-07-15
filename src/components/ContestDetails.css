@@ -1,74 +1,69 @@
-.contest-details {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  .animated-heading {
-    font-size: 2.5rem;
-    color: #00848c;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: slideInFromLeft 0.5s ease-in-out;
-  }
-  
-  .contest-description, 
-  .contest-deadline, 
-  .contest-prizes, 
-  .contest-rules, 
-  .contest-judges {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  .contest-rules-text {
-    white-space: pre-wrap;
-    background: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .btn-register {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background: #00848c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    animation: bounceIn 0.5s ease-in-out;
-  }
-  
-  .btn-register:hover {
-    background-color: #005f5f;
-  }
-  
-  .not-found {
-    font-size: 2rem;
-    color: #ff0000;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  @keyframes slideInFromLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-  }
-  
-  @keyframes bounceIn {
-    0%, 20%, 40%, 60%, 80%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-  }
-  
+/* ContestDetails.css */
+
+.contest-card {
+  width: 70%; /* 70% of the screen width */
+  max-width: 600px; /* Limit maximum width */
+  background: #f9e1e1; /* Light pink background */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  margin: 50px auto; /* Center align horizontally and add vertical margin */
+}
+
+.contest-card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #f4c2c2; /* Lighter pink for top border */
+  margin: auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.contest-card h1 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contest-card .description {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contest-card .deadline,
+.contest-card .prizes,
+.contest-card .rules,
+.contest-card .judges {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contest-card .rules-text {
+  font-size: 14px;
+  white-space: pre-wrap; /* Preserve line breaks */
+  background-color: #fff; /* White background for rules text */
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contest-card .btn-register {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 8px;
+  background: #f4c2c2; /* Lighter pink button background */
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contest-card .btn-register:hover {
+  background: #eaa9a9; /* Darker pink on hover */
+}
